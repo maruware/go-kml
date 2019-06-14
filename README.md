@@ -9,13 +9,14 @@ Go KML Encoder / Decoder
 ```go
 p := filepath.Join("KML_Samples.kml")
 f, err := os.Open(p)
-kml, err := Decode(f)
+k, err := kml.Decode(f)
 ```
 
 ### Encode
 
 ```go
+// var k KML
 buf := &bytes.Buffer{}
-Encode(buf, kml)
+Encode(buf, k)
 kmlString := buf.String()
 ```

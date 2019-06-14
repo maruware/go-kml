@@ -12,7 +12,7 @@ func TestDecodeFile(t *testing.T) {
 	kml, err := DecodeFile(kmlFile)
 
 	if err != nil {
-		t.Fatalf("failed to parse: %v", err)
+		t.Fatalf("failed to decode: %v", err)
 	}
 	if kml.Document.Name != "KML Samples" {
 		t.Errorf("name do not match expected: %v", kml.Document.Name)

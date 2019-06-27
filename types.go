@@ -111,6 +111,7 @@ type styleURLContainer struct {
 
 type Placemark struct {
 	named
+	Description string `xml:"description"`
 	styleURLContainer
 	Point  Point  `xml:"Point"`
 	LookAt LookAt `xml:"LookAt"`
